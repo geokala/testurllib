@@ -40,7 +40,7 @@ class TestUrlCalls(unittest.TestCase):
 
     def test_post_params(self):
         example.call_local_url('', post=True, post_data={'hello': 'yes'})
-        example.urllib2.Request.asser_called_with(
+        example.urllib2.Request.assert_called_with(
             'http://127.0.0.1/',
             'hello=yes',
             headers={},
